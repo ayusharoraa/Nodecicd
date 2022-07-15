@@ -10,7 +10,7 @@ const port: number = 3001;
  
 // Handling '/' Request
 app.get('/', (_req, _res) => {
-    _res.send('Hello from  Nodejs-Code Deployment With Jenkins');
+    _res.send('Hello from  Nodejs-Code Deployment With AWS CodePipeline');
 });
  
 // Server setup
