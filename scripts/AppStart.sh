@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/server/src
+cd /home/ubuntu/server
 npm start
 pm2 start index.js
 pm2 startup
