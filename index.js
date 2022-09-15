@@ -1,20 +1,16 @@
+const http = require('http');
 
-// Import the express in typescript file
-import express from 'express';
- 
-// Initialize the express engine
-const app: express.Application = express();
- 
-// Take a port 3001 for running server.
-const port: number = 3001;
- 
-// Handling '/' Request
-app.get('/', (_req, _res) => {
-    _res.send('Hello from  Nodejs-Code Deployment With AWS CodePipeline');
+const hostname = '172.31.93.92';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World! this is ayushs wbesite on node JS\n');
 });
- 
-// Server setup
-app.listen(port, () => {
-    console.log(`TypeScript with Express
-         http://localhost:${port}/`);
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
