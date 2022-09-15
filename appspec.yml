@@ -2,7 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /usr/share/nginx/html
+    destination: /home/ubuntu/server
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
+
 hooks:
   BeforeInstall:
     - location: scripts/BeforeInstallHook.sh
@@ -10,3 +16,7 @@ hooks:
   AfterInstall:
     - location: scripts/AfterInstallHook.sh
       timeout: 300
+  ApplicationStart:
+    - location: scripts/AppStart.sh
+      timeout: 300
+            
