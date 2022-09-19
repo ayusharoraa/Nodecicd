@@ -6,7 +6,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World! this is ayushs wbesite on node JS version 4.34.0.2\n');
+  res.end('Hello World! this is ayushs wbesite on node JS version 3.34.0.2\n');
 });
 
 server.listen(port, hostname, () => {
