@@ -10,9 +10,9 @@ permissions:
     group: ubuntu
 
 hooks:
-  BeforeInstall:
-    - location: scripts/BeforeInstallHook.sh
-      timeout: 300
+  #BeforeInstall:
+    #- location: scripts/BeforeInstallHook.sh
+     # timeout: 300
   AfterInstall:
     - location: scripts/AfterInstallHook.sh
       timeout: 300
