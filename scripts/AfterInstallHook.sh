@@ -1,5 +1,7 @@
 #!/bin/bash
-cd /home/ubuntu/server
+cd /home/ubuntu
+mkdir server
+cd server
 npm install
 #npm install pm2 -gg
 sudo npm install pm2@latest -g
